@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "id": "yarden-jewelry",
+      "index": "01",
+      "title": "Yarden Jewelry",
+      "subtitle": "Redefining the Visual Direction of an E-commerce Brand",
+      "category": "E-COMMERCE DESIGN / BRAND DIRECTION",
+      "client": "Yarden Jewelry",
+      "industry": "E-commerce / Jewelry",
+      "scope": "Visual Direction, Color System, Logo Design, Image Art Direction, Design-to-Development Collaboration",
+      "role": "Product Designer / Visual Design",
+      "deliverable": "Refined visual direction for a live e-commerce store",
+      "liveUrl": "https://yardenj.com/",
+      "summary": "When an already-developed e-commerce store failed to meet the client's visual expectations, I stepped in to establish a clearer brand direction—from exploring color palettes and developing a new logo concept to collaborating with development on implementation.",
+      "myContribution": "Spoke directly with the client in a WhatsApp group to understand his concerns, developed and presented four alternative color palette directions, created an approved logo concept, prepared and adapted website imagery, and collaborated with a developer on implementation.",
+      "teamContribution": "Developers built the original e-commerce store prior to my involvement and collaborated on implementing the approved visual direction and logo.",
+      "verifiedOutcome": "Client selected option four of the proposed color directions, approved the new logo concept, launched the live website, and paid an additional $100 for the color-direction/logo work and implementation.",
+      "tags": ["Visual Direction", "Color System", "Logo Design", "Image Art Direction", "Design-to-Development Collaboration"],
+      "route": "work/yarden-jewelry.html",
+      "coverPlaceholder": {
+        "title": "Yarden Jewelry — Redefining the Visual Direction of an E-commerce Brand",
+        "spec": "Visual Direction, Color System & Logo Design • Live Storefront",
+        "badge": "Placeholder // Awaiting Final Screenshots"
+      }
+    },
+    {
+      "id": "beresheet-dead-sea",
+      "index": "02",
+      "title": "Beresheet Dead Sea",
+      "subtitle": "E-commerce Product Design",
+      "category": "E-commerce UX",
+      "year": "2024",
+      "timeline": "Feature Sprint",
+      "client": "Beresheet Dead Sea",
+      "scope": "E-commerce UX · Conversion-Focused Design · Content Design",
+      "role": "E-Commerce Product Design",
+      "teamContext": "Product Manager + Product Designer + Frontend Developer",
+      "summary": "Improved product-page experiences with a conversion-focused approach, designing interactive before-and-after comparisons, product-specific skincare content, and customer video sections to help shoppers understand product benefits and make more informed purchase decisions.",
+      "myContribution": "Researched products with the client, developed product-specific UX copy, designed the product-benefit and comparison sections, and collaborated with developers to bring these improvements to life.",
+      "teamContribution": "E-commerce platform integration, payment processing, product photography, and promotional Meta Ads campaigns handled by the broader team and client.",
+      "earlyOutcome": "2 orders in the first week of promotional campaigns following the product-page improvements.",
+      "tags": ["E-commerce UX", "Conversion-Focused Design", "Content Design"],
+      "route": "work/beresheet-dead-sea.html",
+      "coverPlaceholder": {
+        "title": "Beresheet Dead Sea — E-commerce Product Design",
+        "spec": "PDP Value Communication Module • 1440 × 900",
+        "badge": "Live in Production"
+      }
+    },
+    {
+      "id": "foldy-mat",
+      "index": "03",
+      "title": "Foldy Mat",
+      "subtitle": "Distinctive Product Differentiation & E-Commerce Flow",
+      "category": "E-Commerce / Fitness & Wellness",
+      "year": "2024",
+      "timeline": "Team Engagement",
+      "client": "Foldy Mat",
+      "role": "Product Designer (Collaborative Team Delivery)",
+      "teamContext": "Multi-disciplinary E-Commerce Team",
+      "summary": "Designed e-commerce presentation and digital storytelling for an innovative folding yoga mat, emphasizing form factor utility and effortless mobile checkout.",
+      "myContribution": "Structured modular case-study layout; specific personal design contributions, screen iterations, and decisions to be populated upon review.",
+      "teamContribution": "Collaborative delivery with development and product marketing team.",
+      "verifiedOutcome": "Structured case-study framework ready; authentic assets and validated outcomes staged for author sign-off.",
+      "tags": ["Product Differentiation", "Mobile UX", "E-Commerce Flow", "Team Collaboration"],
+      "route": "work/foldy-mat.html",
+      "coverPlaceholder": {
+        "title": "Foldy Mat — Product Storytelling",
+        "spec": "Foldable Mat E-Commerce Experience • 1440 × 900",
+        "badge": "Placeholder // Staged for Content"
+      }
+    }
+  ]
+}

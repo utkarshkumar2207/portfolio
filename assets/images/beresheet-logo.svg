@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <!-- Background with subtle brand tone -->
+  <rect width="600" height="350" fill="#F8FAF9"/>
+  
+  <!-- Subtle border grid pattern or framing -->
+  <rect x="24" y="24" width="552" height="302" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Logo Group -->
+  <g transform="translate(300, 160)" text-anchor="middle">
+    <!-- Clean Minimalist Leaf / Water Droplet Organic Brand Symbol -->
+    <path d="M 0 -42 C 16 -18, 22 2, 0 16 C -22 2, -16 -18, 0 -42 Z" fill="#0F766E"/>
+    <circle cx="0" cy="-6" r="3" fill="#A7F3D0"/>
+
+    <!-- Brand Typography -->
+    <text y="48" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="700" font-size="28" fill="#0F172A" letter-spacing="4">BERESHEET</text>
+    <text y="70" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="10" fill="#0F766E" letter-spacing="3.5">DEAD SEA SKINCARE</text>
+  </g>
+</svg>

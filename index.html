@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utkarsh - Portfolio</title>
+  <meta name="description"
+    content="Product Designer specializing in e&#8209;commerce UX, interface craft, and business-driven clarity. Real-world case studies for Yarden Jewelry and Beresheet Dead Sea.">
+
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:title" content="Product Designer — Portfolio &amp; Selected Case Studies">
+  <meta property="og:description"
+    content="Thoughtful digital experiences, strong visual craft, and verified business outcomes across real-world e&#8209;commerce projects.">
+  <meta property="og:type" content="website">
+
+  <!-- Typography: Ubuntu, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css?v=13">
+  <link rel="stylesheet" href="css/reset.css?v=13">
+  <link rel="stylesheet" href="css/components.css?v=21">
+  <link rel="stylesheet" href="css/home.css?v=42">
+
+  <!-- Main JavaScript Module -->
+  <script src="js/main.js?v=3" defer></script>
+</head>
+
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="brand-link" aria-label="Utkarsh Home">
+        <span class="brand-name">Utkarsh</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <li class="nav-item-mobile-only"><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#work" class="nav-link">Case Studies</a></li>
+          <li><a href="#explorations" class="nav-link">Explorations</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-menu-footer">
+          <div class="nav-menu-divider"></div>
+          <span class="nav-menu-brand">UTKARSH KUMAR SINGH</span>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         Hero Section (Dominic-Inspired Editorial Showcase)
+         ====================================================================== -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-container">
+
+        <!-- Hero Visual Stage -->
+        <div class="hero-stage">
+
+          <!-- Left Column: Role Headline -->
+          <div class="hero-col-left">
+            <h1 id="hero-title" class="hero-role-title">
+              Brand &amp; Product<br class="hero-br-desktop">
+              Designer based in<br class="hero-br-desktop">
+              Delhi NCR, India
+            </h1>
+          </div>
+
+          <!-- Center Backdrop: Utkarsh Portrait with Dominic-style studio background -->
+          <div class="hero-center-portrait">
+            <div class="hero-portrait-frame-dominic">
+              <picture>
+                <source media="(max-width: 768px)" srcset="assets/images/hero-utkarsh-mobile.png?v=2">
+                <img src="assets/images/hero-utkarsh-dominic-clean.png?v=5" alt="Utkarsh Kumar Singh — Brand &amp; UI/UX Designer" class="hero-portrait-img-dominic" width="1600" height="1350">
+              </picture>
+            </div>
+          </div>
+
+          <!-- Right Column: Intro Bio + Orange Pill CTA -->
+          <div class="hero-col-right">
+            <p class="hero-bio-text">
+              Hi, I'm Utkarsh Kumar Singh, a brand and product designer focused on conversions and business growth.
+            </p>
+            <a href="#work" class="hero-pill-cta">
+              <span class="hero-pill-cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+                </svg>
+              </span>
+              <span class="hero-pill-cta-label">See my works</span>
+            </a>
+          </div>
+
+          <!-- Giant Full-Width Display Name Overlay -->
+          <div class="hero-giant-name-wrap" aria-hidden="true">
+            <svg class="hero-giant-name-svg" viewBox="0 0 1000 225" preserveAspectRatio="xMidYMid meet">
+              <text x="500" y="195" text-anchor="middle" font-size="252">Utkarsh</text>
+            </svg>
+          </div>
+
+        </div>
+
+        <!-- Secondary Editorial Intro Block -->
+        <div class="hero-editorial-intro">
+          <div class="hero-editorial-spacer" aria-hidden="true"></div>
+          <div class="hero-editorial-content">
+            <h2 class="hero-editorial-heading">
+              The design that matters is always the design that works
+            </h2>
+            <p class="hero-editorial-body">
+              Ever since a year ago, I have been thinking deeply about why Design exists. I feel like this question is more relevant today than ever before. In today's time when we can design anything we want with relatively lesser efforts than before, knowing what to design becomes a key component in a designer's arsenal.
+            </p>
+            <div class="hero-editorial-actions">
+              <a href="about.html" class="hero-pill-cta">
+                <span class="hero-pill-cta-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+                  </svg>
+                </span>
+                <span class="hero-pill-cta-label">About</span>
+              </a>
+              <a href="#contact" class="hero-pill-cta-secondary">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Section 1: Selected Work
+         ====================================================================== -->
+    <section id="work" class="work-section" aria-labelledby="work-heading">
+      <div class="section-container">
+
+        <header class="section-header">
+          <h2 id="work-heading" class="section-title">Client Project Case Studies</h2>
+          <p class="section-description">
+            Presenting some of the key client projects I have worked on which has challenged my thinking, creativity, and people skills.
+          </p>
+        </header>
+
+        <div class="projects-stack">
+
+          <!-- Project 01: Yarden Jewelry -->
+          <a href="work/yarden-jewelry.html" class="project-card-asymmetric project-card-yarden" aria-labelledby="project-yarden-title">
+            <div class="project-card-media">
+              <img src="assets/images/yarden-logo.png" alt="Yarden Jewelry brand logo"
+                width="1000" height="275" loading="lazy">
+            </div>
+
+            <div class="project-card-body">
+              <div>
+                <h3 id="project-yarden-title" class="project-card-title">
+                  <span>Yarden Jewelry: E&#8209;commerce Brand Design</span>
+                </h3>
+
+                <p class="project-card-summary">
+                  Turned around client dissatisfaction by diagnosing misaligned branding through asynchronous WhatsApp
+                  collaboration, establishing a high-contrast luxury aesthetic, and securing client approval
+                  with an agreed +$100 implementation scope.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 02: Beresheet Dead Sea -->
+          <a href="work/beresheet-dead-sea.html" class="project-card-asymmetric project-card-beresheet" aria-labelledby="project-beresheet-title">
+            <div class="project-card-media">
+              <img src="assets/images/beresheet-logo.png" alt="Beresheet Dead Sea brand logo"
+                width="365" height="61" loading="lazy">
+            </div>
+
+            <div class="project-card-body">
+              <div>
+                <h3 id="project-beresheet-title" class="project-card-title">
+                  <span>Beresheet Dead Sea: E&#8209;commerce Product Design</span>
+                </h3>
+
+                <p class="project-card-summary">
+                  Improved product-page experiences with a conversion-focused approach, designing interactive
+                  before-and-after comparisons, product-specific skincare content, and customer video sections to help
+                  shoppers understand product benefits and make more informed purchase decisions.
+                </p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Section 2: Design Explorations
+         ====================================================================== -->
+    <section id="explorations" class="explorations-section" aria-labelledby="explorations-heading">
+      <div class="section-container">
+
+        <header class="section-header">
+          <h2 id="explorations-heading" class="section-title">Design Explorations</h2>
+          <p class="section-description">
+            Personal projects driven by curiosity, experimentation, and a passion for creating meaningful digital experiences.
+          </p>
+        </header>
+
+        <div class="explorations-stack">
+          <!-- Razorpay Corporate Card Exploration -->
+          <a href="https://razorpay-corporate-card.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-card-asymmetric project-card-razorpay" aria-labelledby="exploration-razorpay-title">
+            <div class="project-card-media">
+              <img src="assets/images/razorpay-logo.svg" alt="Razorpay brand logo"
+                width="1896" height="401" loading="lazy">
+            </div>
+
+            <div class="project-card-body">
+              <div>
+                <h3 id="exploration-razorpay-title" class="project-card-title">
+                  <span>Razorpay Corporate Card</span>
+                </h3>
+
+                <p class="project-card-summary">
+                  Designed an immersive, interactive corporate card showcase featuring real-time 3D physics, interactive reward benefits, dynamic lighting shaders, and precision micro-interactions built for high-growth startups.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Section 3: Contact Card
+         ====================================================================== -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="section-container">
+        <div class="contact-card">
+          <!-- Right Landscape Photo (Utkarsh Portrait from IMG_0617) -->
+          <div class="contact-card-media" aria-hidden="true">
+            <img src="assets/images/contact-banner-bg.jpg?v=5" alt="Utkarsh Kumar Singh" class="contact-card-bg-img" width="1100" height="750" loading="lazy" />
+            <div class="contact-card-overlay"></div>
+          </div>
+
+          <!-- Left Info & Content -->
+          <div class="contact-card-content">
+            <div class="contact-card-header">
+              <h2 id="contact-heading" class="contact-title">
+                Have something in mind?
+              </h2>
+              <p class="contact-desc">
+                I'm always open to interesting opportunities, meaningful collaborations, and challenging design problems. Let's connect and see what we can create together.
+              </p>
+            </div>
+
+            <!-- Bottom Action Row: Signature Orange Pill CTAs -->
+            <div class="contact-card-bottom">
+              <div class="contact-card-pills">
+                <!-- Email Button -->
+                <a href="mailto:utkarshkumar2207@gmail.com" class="hero-pill-cta">
+                  <span class="hero-pill-cta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                  </span>
+                  <span class="hero-pill-cta-label">utkarshkumar2207@gmail.com</span>
+                </a>
+
+                <!-- Phone Button -->
+                <a href="tel:+918130671864" class="hero-pill-cta">
+                  <span class="hero-pill-cta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </span>
+                  <span class="hero-pill-cta-label">+91 8130671864</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div>
+          <h4 class="footer-heading">Case Studies</h4>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="work/yarden-jewelry.html" class="footer-nav-link">Yarden Jewelry</a></li>
+            <li><a href="work/beresheet-dead-sea.html" class="footer-nav-link">Beresheet Dead Sea</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Design Explorations</h4>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="https://razorpay-corporate-card.netlify.app/" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Razorpay Corporate Card</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="#work" class="footer-nav-link">Case Studies</a></li>
+            <li><a href="#explorations" class="footer-nav-link">Explorations</a></li>
+            <li><a href="about.html" class="footer-nav-link">About</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-huge-name-wrap" aria-hidden="true">
+        <svg class="footer-huge-name-svg" viewBox="0 0 1000 130" preserveAspectRatio="xMidYMid meet">
+          <text x="500" y="98" text-anchor="middle" font-size="112">Utkarsh Kumar Singh</text>
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

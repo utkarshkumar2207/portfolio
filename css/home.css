@@ -1,0 +1,1121 @@
+/**
+ * Homepage Styles — Contemporary Product Studio
+ * Hero, Selected Work Grid, Capabilities Matrix, About Section, and Contact CTA.
+ */
+
+/* ==========================================================================
+   Hero Section (Dominic-Inspired Editorial Layout)
+   ========================================================================== */
+
+.hero-section {
+  padding: var(--space-8) 0 var(--space-20);
+  border-bottom: 1px solid var(--color-border-subtle);
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad);
+}
+
+/* Main Hero Stage */
+.hero-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.4fr 1.05fr 1fr;
+  align-items: center;
+  min-height: clamp(500px, 56vw, 680px);
+  padding-top: var(--space-4);
+  padding-bottom: clamp(60px, 9vw, 120px);
+  gap: var(--space-3);
+}
+
+/* Left Column: Status Pill + Role Headline */
+.hero-col-left {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  max-width: 480px;
+  min-width: 0;
+}
+
+.hero-status-pill {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-ink-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.85rem;
+}
+
+.hero-role-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.2vw, 2.25rem);
+  font-weight: var(--weight-medium);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-primary);
+  margin: 0;
+}
+
+/* Center Portrait Backdrop (Dominic Style) */
+.hero-center-portrait {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.hero-portrait-frame-dominic {
+  position: relative;
+  width: clamp(380px, 46vw, 620px);
+  max-width: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-portrait-frame-dominic::before {
+  content: "";
+  display: none;
+}
+
+.hero-portrait-img-dominic {
+  width: 100%;
+  height: auto;
+  max-height: clamp(480px, 52vw, 650px);
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+}
+
+/* Right Column: Bio + Pill CTA */
+.hero-col-right {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-5);
+  max-width: 310px;
+  justify-self: end;
+}
+
+.hero-bio-text {
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Signature Orange Pill CTA with White Circle Arrow */
+.hero-pill-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  background-color: var(--color-accent-cobalt);
+  color: #FFFFFF;
+  padding: 0.375rem 1.35rem 0.375rem 0.425rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 6px 20px rgba(255, 85, 32, 0.32);
+  transition: transform var(--duration-fast) var(--ease-out),
+              background-color var(--duration-fast) var(--ease-out),
+              box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.hero-pill-cta:hover {
+  background-color: var(--color-accent-cobalt-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(255, 85, 32, 0.45);
+}
+
+.hero-pill-cta-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #0E0E0E;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.hero-pill-cta-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.hero-pill-cta:hover .hero-pill-cta-icon {
+  transform: translateX(2px);
+}
+
+/* Giant Display Name Overlay across Bottom of Hero Stage */
+.hero-giant-name-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.hero-giant-name-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.hero-giant-name-svg text {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  fill: var(--color-ink-primary);
+  user-select: none;
+}
+
+/* Partner Logo Strip */
+.hero-logo-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: var(--space-10) 0;
+  margin-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+}
+
+.hero-logo-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-ink-subtle);
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: var(--weight-medium);
+  letter-spacing: -0.01em;
+  opacity: 0.65;
+  transition: opacity var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out);
+}
+
+.hero-logo-item:hover {
+  opacity: 1;
+  color: var(--color-ink-secondary);
+}
+
+.hero-logo-item svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Secondary Editorial Intro Section (Offset Right like Reference) */
+.hero-editorial-intro {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: var(--space-12);
+  padding-top: clamp(var(--space-12), 8vw, var(--space-24));
+  align-items: start;
+}
+
+.hero-editorial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 640px;
+}
+
+.hero-editorial-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  font-weight: var(--weight-medium);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-primary);
+  margin: 0 0 var(--space-6) 0;
+}
+
+
+.hero-editorial-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hero-pill-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: transparent;
+  border: none;
+  color: var(--color-ink-secondary);
+  padding: 0.5rem var(--space-2);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+}
+
+.hero-pill-cta-secondary::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: var(--space-2);
+  right: var(--space-2);
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+}
+
+.hero-pill-cta-secondary:hover {
+  color: var(--color-ink-primary);
+  transform: translateX(3px);
+}
+
+.hero-pill-cta-secondary:hover::after {
+  background-color: var(--color-accent-cobalt);
+}
+
+.hero-editorial-body {
+  font-size: var(--text-body);
+  color: var(--color-ink-secondary);
+  line-height: 1.7;
+  margin: 0 0 var(--space-8) 0;
+}
+
+/* Responsive Adaptations for Hero */
+
+/* Tablet & Intermediate Viewports (769px to 1024px): Preserve desktop 3-column stage */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-stage {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: clamp(520px, 62vw, 680px);
+    padding-top: var(--space-2);
+    padding-bottom: clamp(60px, 8vw, 100px);
+  }
+
+  /* Left and Right columns float at the front sides */
+  .hero-col-left {
+    position: relative;
+    z-index: 4;
+    max-width: clamp(220px, 28vw, 290px);
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+
+  .hero-role-title {
+    font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+    line-height: 1.18;
+  }
+
+  .hero-col-right {
+    position: relative;
+    z-index: 4;
+    max-width: clamp(210px, 27vw, 280px);
+    flex-shrink: 0;
+    pointer-events: auto;
+    text-align: left;
+  }
+
+  .hero-col-right .hero-pill-cta {
+    white-space: nowrap !important;
+    width: max-content;
+  }
+
+  .hero-pill-cta-label {
+    white-space: nowrap !important;
+  }
+
+  /* Center Portrait is enlarged to take the full stage width and height */
+  .hero-center-portrait {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(480px, 62vw, 680px);
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+  }
+
+  .hero-portrait-frame-dominic {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hero-portrait-img-dominic {
+    width: 100%;
+    height: 100%;
+    max-height: clamp(480px, 60vw, 640px);
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
+  }
+
+  /* Name overlay */
+  .hero-giant-name-wrap {
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .hero-editorial-intro {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .hero-editorial-spacer {
+    display: none;
+  }
+
+  /* Contact Card on tablet: buttons share the same full width */
+  .contact-card-pills {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 420px;
+    gap: 0.85rem;
+  }
+
+  .contact-card-pills .hero-pill-cta {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile ONLY (<= 768px): Exact stack matching mockup */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-16);
+  }
+
+  .hero-stage {
+    position: relative;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch;
+    min-height: auto;
+    padding: 0;
+    gap: 0;
+    margin-bottom: var(--space-4);
+  }
+
+  /* 1. Headline at the top - taking up full horizontal space */
+  .hero-col-left {
+    order: 1 !important;
+    position: relative;
+    z-index: 4;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: var(--space-3);
+  }
+
+  .hero-br-desktop {
+    display: none;
+  }
+
+  .hero-role-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.45rem, 9.8vw, 3.25rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: var(--color-ink-primary);
+    width: 100%;
+    word-break: normal;
+  }
+
+  /* 2. Bio text and See my works CTA directly below Headline */
+  .hero-col-right {
+    order: 2 !important;
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: 4;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: var(--space-5);
+    margin-bottom: var(--space-6);
+  }
+
+  .hero-bio-text {
+    font-size: clamp(0.975rem, 3.8vw, 1.0625rem);
+    line-height: 1.5;
+    color: var(--color-ink-secondary);
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  .hero-col-right .hero-pill-cta {
+    font-size: 0.95rem;
+    padding: 0.4rem 1.4rem 0.4rem 0.42rem;
+    gap: var(--space-3);
+    box-shadow: 0 8px 24px rgba(255, 85, 32, 0.4);
+  }
+
+  .hero-col-right .hero-pill-cta-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-col-right .hero-pill-cta-icon svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* 3. Portrait photo centered below CTA, edge-to-edge full width */
+  .hero-center-portrait {
+    order: 3 !important;
+    position: relative !important;
+    z-index: 1;
+    /* Break out of page padding on mobile to touch left and right borders */
+    width: 100vw !important;
+    margin-left: calc(-1 * var(--page-pad)) !important;
+    margin-right: calc(-1 * var(--page-pad)) !important;
+    margin-top: var(--space-4) !important;
+    margin-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .hero-portrait-frame-dominic {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hero-portrait-frame-dominic picture {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-portrait-img-dominic {
+    width: 100% !important;
+    height: auto;
+    max-height: none !important;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* 4. Giant display name Utkarsh overlapping bottom torso - shifted downwards */
+  .hero-giant-name-wrap {
+    display: block !important;
+    order: 4 !important;
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: 3 !important;
+    width: 100vw !important;
+    margin-left: calc(-1 * var(--page-pad)) !important;
+    margin-right: calc(-1 * var(--page-pad)) !important;
+    margin-top: clamp(-60px, -15vw, -90px) !important;
+    margin-bottom: 0 !important;
+    pointer-events: none;
+  }
+
+  .hero-giant-name-svg {
+    transform: scale(1.12);
+    transform-origin: center bottom;
+  }
+
+  .hero-editorial-intro {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-top: clamp(var(--space-12), 14vw, var(--space-20));
+  }
+
+  .hero-editorial-spacer {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-logo-strip {
+    justify-content: center;
+    gap: var(--space-6);
+  }
+}
+
+/* ==========================================================================
+   Section Headers (Shared)
+   ========================================================================== */
+
+.section-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad);
+}
+
+.section-header {
+  margin-bottom: var(--space-12);
+}
+
+.section-index {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-tag);
+  font-weight: var(--weight-semibold);
+  color: var(--color-accent-ink);
+  letter-spacing: var(--tracking-wide);
+  margin-bottom: var(--space-2);
+}
+
+.section-title {
+  font-size: var(--text-h1);
+  color: var(--color-ink-primary);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-3);
+}
+
+.section-description {
+  font-size: var(--text-body-lg);
+  color: var(--color-ink-secondary);
+  max-width: var(--prose-max);
+  line-height: var(--leading-relaxed);
+}
+
+/* ==========================================================================
+   Selected Work Section
+   ========================================================================== */
+
+.work-section {
+  padding: var(--space-24) 0;
+}
+
+.projects-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* Asymmetric 2-column Project Card Layout for Desktop */
+.project-card-asymmetric {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.project-card-asymmetric:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card-asymmetric:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.project-card-asymmetric .project-card-media {
+  aspect-ratio: auto;
+  min-height: 220px;
+  border-bottom: none;
+  border-right: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface-subtle);
+  padding: var(--space-6);
+}
+
+/* Yarden Jewelry Card Specific Styling - media block only */
+.project-card-yarden .project-card-media {
+  background-color: #ccb49a !important;
+}
+
+/* Beresheet Dead Sea Card Specific Styling - media block only */
+.project-card-beresheet .project-card-media {
+  background-color: #ffffff !important;
+}
+
+/* Razorpay Card Specific Styling - media block only */
+.project-card-razorpay .project-card-media {
+  background-color: #F7F9FD !important;
+  border-right: 1px solid #E6EDF9 !important;
+}
+
+.project-card-razorpay .project-card-media img {
+  max-width: 260px;
+  max-height: 55px;
+}
+
+.project-card-asymmetric .project-card-media img {
+  width: 100%;
+  max-width: 320px;
+  max-height: 120px;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.project-card-asymmetric:hover .project-card-media img {
+  transform: scale(1.025);
+}
+
+.project-card-asymmetric .project-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-6) var(--space-8);
+}
+
+.project-attribution-box {
+  background-color: var(--color-surface-subtle);
+  border-left: 3px solid var(--color-accent-cobalt);
+  padding: var(--space-4) var(--space-5);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: var(--space-5) 0 var(--space-6);
+  font-size: var(--text-body-sm);
+}
+
+.attribution-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-accent-ink);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.attribution-text {
+  color: var(--color-ink-primary);
+  font-weight: var(--weight-medium);
+}
+
+/* ==========================================================================
+   Approach & Capabilities Section
+   ========================================================================== */
+
+.capabilities-section {
+  padding: var(--space-24) 0;
+  background-color: var(--color-surface-subtle);
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.capability-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  transition: transform var(--duration-fast) var(--ease-out),
+              box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.capability-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-default);
+}
+
+.capability-index {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-tag);
+  color: var(--color-accent-ink);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-3);
+  display: block;
+}
+
+.capability-title {
+  font-size: var(--text-h3);
+  color: var(--color-ink-primary);
+  margin-bottom: var(--space-3);
+}
+
+.capability-description {
+  font-size: var(--text-body);
+  color: var(--color-ink-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-5);
+}
+
+.capability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+
+.about-section {
+  padding: var(--space-24) 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.about-narrative {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.about-narrative p {
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-ink-secondary);
+}
+
+.about-narrative p strong {
+  color: var(--color-ink-primary);
+}
+
+.principles-card {
+  background-color: var(--color-surface-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+}
+
+.principles-heading {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-6);
+}
+
+.principles-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.principle-item {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.principle-bullet {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-tag);
+  color: var(--color-accent-ink);
+  font-weight: var(--weight-bold);
+  line-height: 1.4;
+}
+
+.principle-title {
+  font-size: 0.9375rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-ink-primary);
+  margin-bottom: var(--space-1);
+}
+
+.principle-desc {
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-secondary);
+  line-height: var(--leading-normal);
+}
+
+/* ==========================================================================
+   Contact CTA Section
+   ========================================================================== */
+
+/* ==========================================================================
+   Contact Section & Landscape Card (Unified Website Theme)
+   ========================================================================== */
+
+.contact-section {
+  padding: var(--space-20) 0 var(--space-24);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+/* Card container: obsidian surface (#141414), subtle dark border */
+.contact-card {
+  position: relative;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+  min-height: 380px;
+  display: flex;
+}
+
+/* Right Media: full-height enlarged landscape photo positioned cleanly on the right */
+.contact-card-media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.contact-card-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right 0%;
+  display: block;
+}
+
+/* Directional gradient overlay blending photo softly while keeping your face crisp & clear */
+.contact-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #141414 0%,
+    #141414 18%,
+    rgba(20, 20, 20, 0.88) 38%,
+    rgba(20, 20, 20, 0.35) 60%,
+    rgba(20, 20, 20, 0) 80%
+  );
+}
+
+/* Left Content Stack */
+.contact-card-content {
+  position: relative;
+  z-index: 2;
+  width: 62%;
+  padding: clamp(2.5rem, 4.5vw, 3.8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.contact-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.contact-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
+  font-weight: var(--weight-medium);
+  color: var(--color-ink-primary);
+  margin: 0;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.contact-desc {
+  font-size: var(--text-body-md);
+  color: var(--color-ink-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: 44ch;
+  margin: 0;
+}
+
+/* Bottom Action Row: Standard Website Signature Orange Pills */
+.contact-card-bottom {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.contact-card-pills {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-card-pills .hero-pill-cta {
+  font-size: 0.92rem;
+  padding: 0.375rem 1.35rem 0.375rem 0.425rem;
+}
+
+.contact-card-pills .hero-pill-cta-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 960px) {
+  .contact-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .contact-card-media {
+    position: relative;
+    width: 100%;
+    height: 260px;
+  }
+  .contact-card-bg-img {
+    object-position: right 0% !important;
+  }
+  .contact-card-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(20, 20, 20, 0.05) 0%,
+      rgba(20, 20, 20, 0.6) 70%,
+      #141414 100%
+    );
+  }
+  .contact-card-content {
+    width: 100%;
+    padding: 2.25rem 2rem;
+  }
+  .contact-card-bottom {
+    width: 100%;
+  }
+  .contact-card-pills {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.85rem;
+  }
+  .contact-card-pills .hero-pill-cta {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+   Design Explorations Section
+   ========================================================================== */
+
+.explorations-section {
+  padding: var(--space-20) 0;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.explorations-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.exploration-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-heading-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-ink-primary);
+  margin-bottom: var(--space-2);
+  line-height: var(--leading-tight);
+}
+
+.exploration-desc {
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-stats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  /* On mobile screens, stack cards vertically: image on top, text below */
+  .project-card-asymmetric {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-asymmetric .project-card-media {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border-subtle);
+    min-height: 180px;
+    padding: var(--space-5);
+  }
+
+  .project-card-asymmetric .project-card-body {
+    padding: var(--space-6);
+  }
+}

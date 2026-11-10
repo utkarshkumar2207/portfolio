@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <!-- Background with subtle brand tone -->
+  <rect width="600" height="350" fill="#F8FAFC"/>
+  
+  <!-- Subtle border framing -->
+  <rect x="24" y="24" width="552" height="302" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Logo Group -->
+  <g transform="translate(300, 155)" text-anchor="middle">
+    <!-- Geometric Folded Mat Icon Mark -->
+    <g transform="translate(-36, -48)">
+      <!-- Panel 1 -->
+      <polygon points="0,20 24,10 24,38 0,48" fill="#2563EB" opacity="0.9"/>
+      <!-- Panel 2 -->
+      <polygon points="24,10 48,20 48,48 24,38" fill="#3B82F6" opacity="0.75"/>
+      <!-- Panel 3 -->
+      <polygon points="48,20 72,10 72,38 48,48" fill="#60A5FA" opacity="0.6"/>
+    </g>
+
+    <!-- Brand Typography -->
+    <text y="48" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="28" fill="#0F172A" letter-spacing="3">FOLDY MAT</text>
+    <text y="70" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="10" fill="#2563EB" letter-spacing="3">ENGINEERED FITNESS</text>
+  </g>
+</svg>

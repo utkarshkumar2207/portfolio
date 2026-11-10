@@ -1,0 +1,511 @@
+/**
+ * Case Study Layout & Components — Contemporary Product Studio
+ * Modular storytelling template: Hero metadata matrix, sticky index, before/after frames,
+ * transparent role attribution, evidence callouts, and next-project pagination.
+ */
+
+/* ==========================================================================
+   Case Study Hero & Metadata Matrix
+   ========================================================================== */
+
+.cs-hero {
+  padding: clamp(var(--space-8), 6vw, var(--space-16)) 0 var(--space-12);
+  border-bottom: 1px solid var(--color-border-subtle);
+  background-color: var(--color-surface);
+}
+
+.cs-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad);
+}
+
+/* Back Navigation Button */
+.cs-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-tag);
+  font-weight: var(--weight-medium);
+  color: var(--color-ink-secondary);
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-fast) var(--ease-out);
+  width: fit-content;
+}
+
+.cs-back-button:hover {
+  color: var(--color-ink-primary);
+  border-color: var(--color-border-strong);
+  background-color: var(--color-surface-subtle);
+  transform: translateX(-2px);
+}
+
+.cs-back-button svg {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.cs-back-button:hover svg {
+  transform: translateX(-2px);
+}
+
+/* Breadcrumb Navigation */
+.cs-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-tag);
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-6);
+}
+
+.cs-breadcrumb a {
+  color: var(--color-ink-secondary);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.cs-breadcrumb a:hover {
+  color: var(--color-ink-primary);
+}
+
+.cs-hero-badge-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.cs-hero-title {
+  font-size: var(--text-h1);
+  color: var(--color-ink-primary);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tighter);
+  max-width: 24ch;
+  margin-bottom: var(--space-4);
+}
+
+.cs-hero-lead {
+  font-size: var(--text-body-lg);
+  color: var(--color-ink-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: var(--prose-max);
+  margin-bottom: var(--space-10);
+}
+
+/* 4-Column Metadata Matrix */
+.cs-metadata-matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  padding: var(--space-6) var(--space-8);
+  background-color: var(--color-surface-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-10);
+}
+
+.cs-meta-col-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin-bottom: var(--space-1);
+}
+
+.cs-meta-col-value {
+  font-size: 0.9375rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-ink-primary);
+  line-height: 1.35;
+}
+
+/* Hero Media Display Frame */
+.cs-hero-media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--color-surface-subtle);
+  margin-top: var(--space-8);
+}
+
+.cs-hero-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hero Media Button Action */
+.cs-hero-action {
+  margin-top: var(--space-5);
+  display: flex;
+  justify-content: center;
+}
+
+.cs-external-visit-btn {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Case Study Main Content & Sticky Index
+   ========================================================================== */
+
+.cs-content-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-16);
+  padding: var(--space-16) 0 var(--space-24);
+  align-items: start;
+}
+
+/* Sticky In-Page Navigation */
+.cs-sticky-sidebar {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-right: var(--space-6);
+  border-right: 1px solid var(--color-border-subtle);
+}
+
+.cs-sidebar-heading {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-ink-muted);
+}
+
+.cs-toc-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.cs-toc-link {
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-secondary);
+  padding: var(--space-1) 0;
+  border-left: 2px solid transparent;
+  padding-left: var(--space-3);
+  margin-left: calc(-1 * var(--space-3));
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.cs-toc-link:hover,
+.cs-toc-link.is-active {
+  color: var(--color-ink-primary);
+  border-left-color: var(--color-accent-cobalt);
+  font-weight: var(--weight-medium);
+}
+
+/* Narrative Prose Column */
+.cs-prose-column {
+  max-width: var(--prose-max);
+}
+
+.cs-section {
+  margin-bottom: var(--space-16);
+  scroll-margin-top: 120px;
+}
+
+.cs-section-index {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: #FFFFFF;
+  background-color: rgba(255, 85, 32, 0.82);
+  border: 1px solid rgba(255, 85, 32, 0.45);
+  padding: 0.32rem 0.95rem;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-4);
+  box-shadow: 0 3px 12px rgba(255, 85, 32, 0.22);
+}
+
+.cs-section-heading {
+  font-size: var(--text-h2);
+  color: var(--color-ink-primary);
+  margin-bottom: var(--space-5);
+  letter-spacing: var(--tracking-tight);
+}
+
+.cs-prose-column p {
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-ink-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.cs-prose-column p strong {
+  color: var(--color-ink-primary);
+}
+
+/* ==========================================================================
+   Attribution Split Card (Me vs. Team)
+   ========================================================================== */
+
+.cs-attribution-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  margin: var(--space-8) 0;
+}
+
+.cs-attr-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cs-attr-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-xs);
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: var(--space-2);
+}
+
+.cs-attr-badge-mine {
+  background-color: var(--color-accent-cobalt-subtle);
+  color: var(--color-ink-primary);
+  border: 1px solid var(--color-accent-cobalt);
+}
+
+.cs-attr-badge-team {
+  background-color: var(--color-surface-subtle);
+  color: var(--color-ink-muted);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.cs-attr-title {
+  font-size: var(--text-h4);
+  color: var(--color-ink-primary);
+}
+
+.cs-attr-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.cs-attr-item {
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-secondary);
+  line-height: var(--leading-normal);
+  position: relative;
+  padding-left: var(--space-4);
+}
+
+.cs-attr-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-cobalt);
+}
+
+/* ==========================================================================
+   Visual Evidence & Comparison Grids
+   ========================================================================== */
+
+.cs-figure {
+  margin: var(--space-10) 0;
+}
+
+.cs-figure-frame {
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-surface-subtle);
+}
+
+.cs-figure-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cs-figure-caption {
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-tag);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-normal);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.cs-caption-marker {
+  color: var(--color-accent-ink);
+  font-weight: var(--weight-bold);
+}
+
+/* Side-by-Side Comparison Grid */
+.cs-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+}
+
+.cs-comparison-card {
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.cs-comparison-header {
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-surface-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-ink-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-comparison-body {
+  padding: var(--space-4);
+}
+
+/* Outcome Highlight Card */
+.cs-outcome-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-left: 4px solid var(--color-accent-cobalt);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  margin: var(--space-8) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.cs-outcome-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.cs-outcome-pill {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  background-color: var(--color-accent-cobalt-subtle);
+  color: var(--color-ink-primary);
+  border: 1px solid var(--color-accent-cobalt);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-xs);
+}
+
+.cs-outcome-title {
+  font-size: var(--text-h3);
+  color: var(--color-ink-primary);
+}
+
+/* Next Project Pagination Banner */
+.cs-pagination {
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: var(--space-12);
+  margin-top: var(--space-16);
+}
+
+.cs-pagination-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-3);
+  display: block;
+}
+
+.cs-pagination-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-8);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.cs-pagination-card:hover {
+  border-color: var(--color-accent-cobalt);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.cs-pagination-title {
+  font-size: var(--text-h3);
+  color: var(--color-ink-primary);
+  margin-bottom: var(--space-1);
+}
+
+.cs-pagination-sub {
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-muted);
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .cs-metadata-matrix {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-content-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .cs-sticky-sidebar {
+    display: none; /* Hide sidebar on mobile / tablet to prioritize prose flow */
+  }
+
+  .cs-attribution-split {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .cs-metadata-matrix {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foldy Mat Case Study — Product Designer Portfolio</title>
+  <meta name="description" content="Modular case-study structure for Foldy Mat, staged for authentic project assets, personal design contributions, and validated business outcomes.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css?v=2">
+  <link rel="stylesheet" href="../css/reset.css?v=2">
+  <link rel="stylesheet" href="../css/components.css?v=2">
+  <link rel="stylesheet" href="../css/case-study.css?v=2">
+
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-link" aria-label="Return to portfolio home">
+        <span class="brand-name">Utkarsh Kumar Singh</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="../index.html#work" class="nav-link">Case Studies</a></li>
+          <li><a href="../index.html#explorations" class="nav-link">Explorations</a></li>
+          <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ======================================================================
+         Case Study Hero & Metadata Matrix
+         ====================================================================== -->
+    <section class="cs-hero" aria-labelledby="cs-title">
+      <div class="cs-container">
+        
+        <!-- Back Navigation Button -->
+        <a href="../index.html#work" class="cs-back-button" aria-label="Back to Selected Work">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 8H3M7 12L3 8l4-4" />
+          </svg>
+          <span>Back</span>
+        </a>
+
+        <h1 id="cs-title" class="cs-hero-title">
+          Foldy Mat — Distinctive Product Differentiation &amp; E-Commerce Flow
+        </h1>
+
+        <p class="cs-hero-lead">
+          Designing e-commerce presentation and digital storytelling for an innovative folding yoga mat, emphasizing form-factor utility, tactile product advantages, and effortless mobile checkout.
+        </p>
+
+        <!-- 4-Column Structured Metadata Matrix -->
+        <div class="cs-metadata-matrix" role="region" aria-label="Project Metadata">
+          <div>
+            <span class="cs-meta-col-label">My Role</span>
+            <span class="cs-meta-col-value">Product Designer (Collaborative Team Delivery)</span>
+          </div>
+          <div>
+            <span class="cs-meta-col-label">Team Context</span>
+            <span class="cs-meta-col-value">Client Stakeholders + Candidate + Development Team</span>
+          </div>
+          <div>
+            <span class="cs-meta-col-label">Platform</span>
+            <span class="cs-meta-col-value">Direct-to-Consumer E-Commerce</span>
+          </div>
+          <div>
+            <span class="cs-meta-col-label">Content Status</span>
+            <span class="cs-meta-col-value">Staged for Authentic Content &amp; Visuals</span>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Frame (Placeholder) -->
+        <div class="cs-hero-media">
+          <img src="../assets/images/foldymat-cover.svg" alt="Foldy Mat modular case-study shell preview" width="800" height="500">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Case Study Narrative Flow
+         ====================================================================== -->
+    <div class="cs-container">
+      <div class="cs-content-layout">
+
+        <!-- Sticky In-Page Navigation (Desktop) -->
+        <aside class="cs-sticky-sidebar" aria-label="Case Study Table of Contents">
+          <span class="cs-sidebar-heading">Contents</span>
+          <nav class="cs-toc-list" role="list">
+            <a href="#overview" class="cs-toc-link">01. Project Overview</a>
+            <a href="#attribution" class="cs-toc-link">02. Role &amp; Attribution</a>
+            <a href="#challenge" class="cs-toc-link">03. The Challenge</a>
+            <a href="#strategy" class="cs-toc-link">04. Design Strategy</a>
+            <a href="#experience" class="cs-toc-link">05. Final Experience</a>
+            <a href="#outcomes" class="cs-toc-link">06. Outcomes</a>
+          </nav>
+        </aside>
+
+        <!-- Narrative Column -->
+        <article class="cs-prose-column">
+
+          <!-- Section 01: Project Overview -->
+          <section id="overview" class="cs-section">
+            <span class="cs-section-index">// 01 — Context</span>
+            <h2 class="cs-section-heading">Project Overview &amp; Background</h2>
+            <p>
+              Foldy Mat is an innovative consumer fitness brand manufacturing a distinctive folding yoga mat designed for travel convenience, hygienic storage, and joint support during practice.
+            </p>
+            <p>
+              Unlike traditional rolled mats that retain curling tension and trap dirt, the Foldy Mat relies on an engineered geometric folding mechanism. The digital experience needed to articulate this mechanical differentiation clearly to customers.
+            </p>
+          </section>
+
+          <!-- Section 02: Role & Attribution -->
+          <section id="attribution" class="cs-section">
+            <span class="cs-section-index">// 02 — Team &amp; Responsibilities</span>
+            <h2 class="cs-section-heading">My Role &amp; Team Collaboration</h2>
+            
+            <div class="cs-attribution-split">
+              <div class="cs-attr-col">
+                <span class="cs-attr-badge cs-attr-badge-mine">Individual Contribution</span>
+                <h3 class="cs-attr-title">Design Staging</h3>
+                <ul class="cs-attr-list" role="list">
+                  <li class="cs-attr-item">Modular case-study architecture staged.</li>
+                  <li class="cs-attr-item">Personal responsibilities and specific interface contributions to be documented upon author review.</li>
+                  <li class="cs-attr-item">Zero fabricated claims or speculative deliverables.</li>
+                </ul>
+              </div>
+
+              <div class="cs-attr-col">
+                <span class="cs-attr-badge cs-attr-badge-team">Team Scope</span>
+                <h3 class="cs-attr-title">Collaborative Delivery</h3>
+                <ul class="cs-attr-list" role="list">
+                  <li class="cs-attr-item">Collaborative product delivery with development partners.</li>
+                  <li class="cs-attr-item">Brand strategy and supply chain management by client team.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 03: The Challenge -->
+          <section id="challenge" class="cs-section">
+            <span class="cs-section-index">// 03 — Challenge</span>
+            <h2 class="cs-section-heading">The Core Design Challenge</h2>
+            
+            <!-- Structural Placeholder Callout -->
+            <div class="placeholder-frame">
+              <div class="placeholder-grid-pattern"></div>
+              <div class="placeholder-content">
+                <span class="placeholder-tag">Placeholder // Staged Section</span>
+                <h3 class="placeholder-title">Problem Statement &amp; Discovery</h3>
+                <p class="placeholder-note">
+                  This section will contain the authentic business challenge, customer friction points, and constraints as provided by the designer. No synthetic personas or invented research will be published.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 04: Design Strategy -->
+          <section id="strategy" class="cs-section">
+            <span class="cs-section-index">// 04 — Strategy</span>
+            <h2 class="cs-section-heading">Design Explorations &amp; Visual System</h2>
+            
+            <div class="placeholder-frame">
+              <div class="placeholder-grid-pattern"></div>
+              <div class="placeholder-content">
+                <span class="placeholder-tag">Placeholder // Visual Artifacts</span>
+                <h3 class="placeholder-title">Screen Iterations &amp; Interaction Craft</h3>
+                <p class="placeholder-note">
+                  High-resolution project screenshots, responsive layouts, and interaction flows will be placed here once client authorization and asset exports are complete.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 05: Final Experience -->
+          <section id="experience" class="cs-section">
+            <span class="cs-section-index">// 05 — Delivery</span>
+            <h2 class="cs-section-heading">The Final E-Commerce Experience</h2>
+            <p>
+              The case-study structure is engineered to highlight key moments of the customer experience: the product presentation fold demonstration, feature callouts, mobile shopping cart, and post-purchase confirmation.
+            </p>
+          </section>
+
+          <!-- Section 06: Outcomes -->
+          <section id="outcomes" class="cs-section">
+            <span class="cs-section-index">// 06 — Outcomes</span>
+            <h2 class="cs-section-heading">Outcomes &amp; Key Takeaways</h2>
+            
+            <div class="cs-outcome-card">
+              <div class="cs-outcome-header">
+                <span class="cs-outcome-pill">Status: Content Staging</span>
+                <h3 class="cs-outcome-title">Authentic Outcomes Pending Review</h3>
+              </div>
+              <p>
+                Verified outcomes, client feedback, or performance data will be incorporated here following author validation.
+              </p>
+            </div>
+          </section>
+
+          <!-- Next Project Pagination Banner (Loops back to Yarden) -->
+          <div class="cs-pagination">
+            <span class="cs-pagination-label">Next Case Study</span>
+            <a href="yarden-jewelry.html" class="cs-pagination-card">
+              <div>
+                <h3 class="cs-pagination-title">Yarden Jewelry</h3>
+                <p class="cs-pagination-sub">Brand Realignment &amp; Visual E-Commerce Direction →</p>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-summary">
+          <div class="brand-link" style="margin-bottom: var(--space-3);">
+            <span class="brand-name">Utkarsh Kumar Singh</span>
+          </div>
+          <p style="font-size: var(--text-body-sm); color: var(--color-ink-muted); line-height: var(--leading-normal);">
+            Thoughtful digital experiences, strong visual craft, and verified business outcomes across real-world commercial projects.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Selected Work</h4>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="yarden-jewelry.html" class="footer-nav-link">Yarden Jewelry</a></li>
+            <li><a href="beresheet-dead-sea.html" class="footer-nav-link">Beresheet Dead Sea</a></li>
+            <li><a href="foldy-mat.html" class="footer-nav-link">Foldy Mat</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="../index.html#work" class="footer-nav-link">Case Studies</a></li>
+            <li><a href="../index.html#explorations" class="footer-nav-link">Explorations</a></li>
+            <li><a href="../index.html#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

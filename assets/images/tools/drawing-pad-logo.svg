@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="12" y="10" width="38" height="46" rx="5" fill="#18181B" stroke="#2E2E33" stroke-width="2"/>
+  <!-- Spiral binding ring holes -->
+  <line x1="8" y1="18" x2="16" y2="18" stroke="#E6E6E6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="8" y1="26" x2="16" y2="26" stroke="#E6E6E6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="8" y1="34" x2="16" y2="34" stroke="#E6E6E6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="8" y1="42" x2="16" y2="42" stroke="#E6E6E6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="8" y1="50" x2="16" y2="50" stroke="#E6E6E6" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Sketchpad wireframe notes -->
+  <line x1="22" y1="20" x2="42" y2="20" stroke="#52525B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="22" y1="27" x2="36" y2="27" stroke="#52525B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M22 36L29 42L42 30" stroke="#FF5520" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Pen Stylus -->
+  <path d="M48 38L55 45L52 51L45 49L48 38Z" fill="#FF5520"/>
+  <path d="M43 51L41 54L46 53L43 51Z" fill="#FFFFFF"/>
+</svg>
