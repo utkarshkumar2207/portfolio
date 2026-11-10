@@ -742,3 +742,17 @@
     display: none !important;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-card-content {
+    padding: 2rem 1.15rem !important;
+  }
+  .contact-card-pills .hero-pill-cta {
+    padding: 0.35rem 0.75rem 0.35rem 0.35rem !important;
+    gap: 0.45rem !important;
+    font-size: clamp(0.72rem, 3.4vw, 0.8125rem) !important;
+  }
+  .contact-card-pills .hero-pill-cta-label {
+    white-space: nowrap !important;
+  }
+}
