@@ -8,7 +8,7 @@
    ========================================================================== */
 
 .hero-section {
-  padding: var(--space-8) 0 var(--space-20);
+  padding: 0 0 var(--space-20);
   border-bottom: 1px solid var(--color-border-subtle);
   overflow: hidden;
 }
@@ -17,18 +17,21 @@
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--page-pad);
+  display: flex;
+  flex-direction: column;
 }
 
-/* Main Hero Stage */
+/* Main Hero Stage: Clean, balanced editorial stage */
 .hero-stage {
   position: relative;
   display: grid;
   grid-template-columns: 1.4fr 1.05fr 1fr;
   align-items: center;
-  min-height: clamp(500px, 56vw, 680px);
-  padding-top: var(--space-4);
-  padding-bottom: clamp(60px, 9vw, 120px);
+  min-height: clamp(540px, 62vw, 700px);
+  padding-top: clamp(2rem, 4vw, 3.5rem);
+  padding-bottom: clamp(60px, 8vw, 120px);
   gap: var(--space-3);
+  box-sizing: border-box;
 }
 
 /* Left Column: Status Pill + Role Headline */
@@ -40,6 +43,7 @@
   align-items: flex-start;
   gap: var(--space-4);
   max-width: 480px;
+  width: max-content;
   min-width: 0;
 }
 
@@ -60,6 +64,7 @@
   letter-spacing: -0.02em;
   color: var(--color-ink-primary);
   margin: 0;
+  white-space: nowrap;
 }
 
 /* Center Portrait Backdrop (Dominic Style) */
@@ -74,8 +79,9 @@
 
 .hero-portrait-frame-dominic {
   position: relative;
-  width: clamp(380px, 46vw, 620px);
-  max-width: 620px;
+  width: clamp(380px, 46vw, 680px);
+  max-width: 680px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -89,7 +95,7 @@
 .hero-portrait-img-dominic {
   width: 100%;
   height: auto;
-  max-height: clamp(480px, 52vw, 650px);
+  max-height: clamp(520px, 72vh, 760px);
   object-fit: contain;
   object-position: center bottom;
   display: block;
@@ -227,12 +233,39 @@
 }
 
 /* Secondary Editorial Intro Section (Offset Right like Reference) */
+.hero-editorial-heading-mobile {
+  display: none;
+}
+
 .hero-editorial-intro {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
-  gap: var(--space-12);
+  grid-template-columns: minmax(320px, 480px) 1.2fr;
+  gap: clamp(var(--space-8), 4vw, var(--space-16));
+  margin-top: clamp(var(--space-12), 8vw, var(--space-24));
   padding-top: clamp(var(--space-12), 8vw, var(--space-24));
-  align-items: start;
+  border-top: none;
+  align-items: center;
+}
+
+.hero-editorial-media {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero-editorial-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
 }
 
 .hero-editorial-content {
@@ -321,7 +354,8 @@
   .hero-col-left {
     position: relative;
     z-index: 4;
-    max-width: clamp(220px, 28vw, 290px);
+    max-width: clamp(260px, 32vw, 340px);
+    width: max-content;
     flex-shrink: 0;
     pointer-events: auto;
   }
@@ -329,6 +363,7 @@
   .hero-role-title {
     font-size: clamp(1.4rem, 2.3vw, 1.85rem);
     line-height: 1.18;
+    white-space: normal;
   }
 
   .hero-col-right {
@@ -391,12 +426,59 @@
   }
 
   .hero-editorial-intro {
-    grid-template-columns: 1fr;
-    gap: 0;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: var(--space-6);
+    margin-top: clamp(3rem, 8vw, 4.5rem) !important;
+    padding-top: clamp(2.5rem, 6vw, 3.5rem) !important;
+    border-top: none !important;
   }
 
-  .hero-editorial-spacer {
-    display: none;
+  .hero-editorial-heading-mobile {
+    display: block !important;
+    order: 1 !important;
+    width: 100% !important;
+    text-align: left !important;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4.5vw, 2.75rem);
+    font-weight: var(--weight-medium);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: var(--color-ink-primary);
+    margin: 0;
+  }
+
+  .hero-editorial-media {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: clamp(340px, 54vw, 460px) !important;
+    margin: 0 !important;
+    align-self: flex-start !important;
+  }
+
+  .hero-editorial-content {
+    order: 3 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .hero-editorial-body {
+    text-align: left !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-editorial-actions {
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  .hero-editorial-content .hero-editorial-heading {
+    display: none !important;
   }
 
   /* Contact Card on tablet: buttons share the same full width */
@@ -457,6 +539,7 @@
     color: var(--color-ink-primary);
     width: 100%;
     word-break: normal;
+    white-space: normal;
   }
 
   /* 2. Bio text and See my works CTA directly below Headline */
@@ -548,30 +631,67 @@
     position: relative !important;
     top: auto !important;
     bottom: auto !important;
-    left: auto !important;
+    left: 50% !important;
     right: auto !important;
+    transform: translateX(-50%) !important;
     z-index: 3 !important;
     width: 100vw !important;
-    margin-left: calc(-1 * var(--page-pad)) !important;
-    margin-right: calc(-1 * var(--page-pad)) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     margin-top: clamp(-60px, -15vw, -90px) !important;
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
     pointer-events: none;
   }
 
   .hero-giant-name-svg {
-    transform: scale(1.12);
+    width: 100% !important;
+    transform: scale(1.05);
     transform-origin: center bottom;
   }
 
   .hero-editorial-intro {
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding-top: clamp(var(--space-12), 14vw, var(--space-20));
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: var(--space-6);
+    margin-top: clamp(2.5rem, 8.5vw, 3.6rem) !important;
+    padding-top: clamp(2.5rem, 8.5vw, 3.6rem) !important;
+    border-top: 1px solid var(--color-border-subtle);
   }
 
-  .hero-editorial-spacer {
-    display: none;
+  .hero-editorial-heading-mobile {
+    display: block !important;
+    order: 1 !important;
+    width: 100% !important;
+    text-align: left !important;
+    font-family: var(--font-display);
+    font-size: clamp(1.85rem, 6.5vw, 2.35rem);
+    font-weight: var(--weight-medium);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: var(--color-ink-primary);
+    margin: 0;
+  }
+
+  .hero-editorial-media {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    align-self: stretch !important;
+  }
+
+  .hero-editorial-content {
+    order: 3 !important;
+    width: 100% !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .hero-editorial-content .hero-editorial-heading {
+    display: none !important;
   }
 }
 
@@ -888,7 +1008,9 @@
    ========================================================================== */
 
 .contact-section {
-  padding: var(--space-20) 0 var(--space-24);
+  padding: var(--space-20) 0 0;
+  margin-top: var(--space-20);
+  margin-bottom: 0;
   border-top: 1px solid var(--color-border-subtle);
 }
 

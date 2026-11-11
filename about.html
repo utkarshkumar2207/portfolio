@@ -21,8 +21,8 @@
   <!-- Core Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css?v=15">
   <link rel="stylesheet" href="css/reset.css?v=15">
-  <link rel="stylesheet" href="css/components.css?v=23">
-  <link rel="stylesheet" href="css/about.css?v=44">
+  <link rel="stylesheet" href="css/components.css?v=34">
+  <link rel="stylesheet" href="css/about.css?v=60">
 </head>
 <body class="about-page">
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -94,6 +94,13 @@
             </div>
           </div>
 
+          <!-- Giant Display Overlay ("About") for mobile hero parity -->
+          <div class="about-giant-name-wrap" aria-hidden="true">
+            <svg class="about-giant-name-svg" viewBox="0 0 1000 225" preserveAspectRatio="xMidYMid meet">
+              <text x="500" y="195" text-anchor="middle" font-size="252">About</text>
+            </svg>
+          </div>
+
 
 
         </div>
@@ -103,34 +110,53 @@
     <!-- Narrative & Approach Section -->
     <section class="about-body-section" aria-labelledby="approach-heading">
       <div class="about-page-container">
-        <div class="about-two-col">
+        <div class="about-approach-col">
           
-          <div class="about-col-header">
-            <h2 id="approach-heading" class="about-section-heading">How I Approach Design</h2>
+          <h2 class="about-approach-heading-mobile" aria-hidden="true">How I Approach Design</h2>
+
+          <!-- Left: Autoplaying presentation video -->
+          <div class="about-approach-media">
+            <video class="about-approach-video" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback preload="auto" aria-label="Presentation video">
+              <source src="assets/videos/presentation-short.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="video-touch-badge" aria-label="Watch video in player">
+              <span class="video-touch-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M4.5 3.5v9l8-4.5-8-4.5z"/>
+                </svg>
+              </span>
+              <span>Watch Video</span>
+            </button>
           </div>
 
-                    <div class="about-prose">
-            <p>
-              As of late, I have been focusing way more on what the design does than how the design looks.
-            </p>
-            <p>
-              I am asking questions like how is this making the users feel? How does a button style affect the checkout rates on e-commerce webstores? What is the motion gradient doing to the conversions?
-            </p>
-            <p>
-              Because if it is not doing anything, then it's just noise and I've learned that noise can be harmful.
-            </p>
-            <p>
-              In today's time when we can design anything we want with relatively lesser efforts than before, knowing what to design becomes a key component in a designer's arsenal.
-            </p>
-            <div style="margin-top: var(--space-4);">
-              <a href="index.html#work" class="hero-pill-cta">
-                <span class="hero-pill-cta-icon" aria-hidden="true">
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
-                  </svg>
-                </span>
-                <span class="hero-pill-cta-label">See my works</span>
-              </a>
+          <!-- Right: Heading, Prose & Actions -->
+          <div class="about-approach-content">
+            <div class="about-col-header" style="position: static; margin-bottom: var(--space-6);">
+              <h2 id="approach-heading" class="about-section-heading">How I Approach Design</h2>
+            </div>
+            <div class="about-prose">
+              <p>
+                As of late, I have been focusing way more on what the design does than how the design looks.
+              </p>
+              <p>
+                I am asking questions like how is this making the users feel? How does a button style affect the checkout rates on e-commerce webstores? What is the motion gradient doing to the conversions?
+              </p>
+              <p>
+                Because if it is not doing anything, then it's just noise and I've learned that noise can be harmful.
+              </p>
+              <p>
+                In today's time when we can design anything we want with relatively lesser efforts than before, knowing what to design becomes a key component in a designer's arsenal.
+              </p>
+              <div style="margin-top: var(--space-4);">
+                <a href="index.html#work" class="hero-pill-cta">
+                  <span class="hero-pill-cta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3.5 8h9M8.5 4l4 4-4 4"/>
+                    </svg>
+                  </span>
+                  <span class="hero-pill-cta-label">See my works</span>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -338,6 +364,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>
